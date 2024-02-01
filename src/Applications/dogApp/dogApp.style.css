@@ -1,0 +1,71 @@
+.dogs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.dog {
+    width: 300px;
+    height: 300px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    margin: 10px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.dog:hover {
+    transform: scale(1.05);
+}
+
+/* Style the dog image */
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-bottom: 2px solid #333;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.dog-buttons {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+button:disabled {
+    background-color: #d3d3d3;
+    cursor: not-allowed;
+}
+
+.like-button,
+.remove-button {
+    background-color: #3498db;
+    color: white;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.like-button:hover,
+.remove-button:hover {
+    background-color: #2980b9;
+}
